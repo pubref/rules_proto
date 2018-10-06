@@ -457,9 +457,9 @@ def proto_compile_impl(ctx):
         for src in dep.direct_sources:
             if directs.get(src.path):
                 continue
-            directs[src.path] = src
             proto = copy_proto(ctx, descriptor, src)
             protos.append(proto)
+            directs[src.path] = proto
 
             for plugin in plugins:
                 outputs = _get_plugin_outputs(ctx, descriptor, outputs, src, proto, plugin)
