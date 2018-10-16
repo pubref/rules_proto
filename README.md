@@ -57,7 +57,7 @@ that language. [TODO: write these files!]
 To build a c++ gRPC library:
 
 ```python
-load("@org_pubref_rules_protobuf//cpp:library.bzl", "cpp_grpc_library")
+load("@org_pubref_rules_proto//cpp:library.bzl", "cpp_grpc_library")
 
 proto_library(
   name = "proto_library",
