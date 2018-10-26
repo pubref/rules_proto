@@ -1,8 +1,0 @@
-load("//github.com/improbable-eng/ts-protoc-gen:compile.bzl", "ts_grpc_compile")
-
-ts_grpc_compile(
-    name = "routeguide",
-    deps = [
-        "//example/proto/routeguide:proto_library",
-    ],
-)

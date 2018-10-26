@@ -1,4 +1,0 @@
-name: protoc_plugin_deps
-
-dependencies:
-  protoc_plugin: '0.10.2'
